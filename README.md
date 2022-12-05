@@ -1,2 +1,1 @@
-Shell basics repo
-This is day two
+Readme the third
