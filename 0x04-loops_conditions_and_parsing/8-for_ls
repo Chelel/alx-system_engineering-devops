@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+#displays the content of the current directory
+#in a list format
+
+ for file in *
+do
+  if [ "${file:0:1}" != "." ] && [ -f "$file" ]
+  then
+    echo "${file#*-}"
+  fi
+done
