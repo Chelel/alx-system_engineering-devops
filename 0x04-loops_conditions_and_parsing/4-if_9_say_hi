@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+#displays Best School and then Hi on a new line
+#on the 9th iteration
 num=0
 while [ $num -lt 10 ]
 do
