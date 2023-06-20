@@ -1,0 +1,43 @@
+1. echo 'hello world'
+2. pwd
+3. ls
+4. cat access.log
+5. tail -5 access.log
+6. touch take-the-command-challenge
+7. mkdir -p tmp/files
+8. cp take-the-command-challenge tmp/files 
+9. mv take-the-command-challenge tmp/files
+10. ln -s tmp/files/take-the-command-challenge "take-the-command-challenge"
+11. find -delete
+12. find . -name "*.doc" -delete
+13. grep GET access.log
+14. grep -l 500 *
+15. ls
+16. grep -rh
+17. grep -ro ^[0-9.]*
+18. find . -type f | wc -l
+19. sort access.log
+20. grep GET access.log | wc -l
+21. cat split-me.txt | tr ";" "\n"
+22. echo {1..100}
+23. sed -i 'challenge are difficult/d' **/*.txt
+24. jq -s add sum-me.txt
+25. find . -type f -printf "%f\n"
+26. mv * .*
+27. ls | tr ' ' '.'
+28. dirname **/*tf | sort -u
+29. find -type f -printf '%f\n' | grep ^[0-9]
+30. sed -n '25p' faces.txt
+31. tac *
+32. awk '!c[$0]++' faces.txt
+33. cat random-numbers.txt | sort|uniq | factor | awk 'NF==2'| wc -l
+34. awk 's[$1]++{print $1}' access.log*
+35. grep -h -B1 404 **/access.log*|grep -vE '404|--'
+36. for f in t*; do cmp -s bas* $f || echo $f; done
+37. cat './.../  /. .the flag.txt'
+38. grep -P "\t" * | wc -l
+39. find -type f ! -regex '.*\(exe\|txt\)$' -delete
+40. rm ./-*
+41. cat ps-* | sort -k2 -n |uniq
+42. grep "\bLISTEN\b" netstat.out|grep -oP "tcp\s+.*:\K\d+"|sort -nr
+
